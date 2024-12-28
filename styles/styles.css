@@ -1,0 +1,568 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+/* Estilos general para enlaces */
+a {
+  text-decoration: none;
+
+/* Transición para todos los elementos */
+}
+* {
+  transition: 0.4s ease;
+}
+
+/* Estilos generales para el body */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Clase para elementos de bloque */
+.rela-block {
+  display: block;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Nav bar */
+.nav-bar {
+  position: fixed;
+  z-index: 100;
+  height: 110px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-bar.scrolled {
+  height: 80px;
+  background-color: rgba(0,0,0,0.7);
+}
+.nav-logo {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+  font-family: "Montserrat";
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #fff;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.nav-links-container {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+.nav-link {
+  color: #999;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0 12px;
+  transition: 0.4s ease;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #fff;
+}
+
+/* Imagen principal */
+.top-section {
+  height: 100vh;
+  background:url(../assets/img/imagen-inicio.png) no-repeat center;
+  background-size: cover;
+}
+.grad-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(transparent, rgba(0,0,0,0.9));
+}
+
+/* Estilos para los titulos */
+.half-big-text {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 12px;
+  margin-bottom: 45px;
+}
+.half-big-text.has-border {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 50px;
+  padding: 15px 45px;
+}
+.small-header {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+/* Seccion de contacto */
+.contact-section {
+  padding: 25px 0 10px;
+  background-color: #33333317;
+}
+.contact-form-container {
+  max-width: 1300px;
+  margin: auto;
+}
+.contact-half {
+  display: inline-block;
+  position: relative;
+  width: 48%;
+  vertical-align: top;
+  margin: 0 0.5% 40px;
+}
+.contact-half .small-header {
+  font-size: 14px;
+  margin: 20px auto;
+  letter-spacing: 2px;
+}
+.contact-half .submit-button {
+  cursor: pointer;
+}
+
+.contact-input {
+  width: 85%;
+  margin: 8px auto;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px;
+  border: 1px solid;
+  text-align: left;
+}
+.contact-input.big-input {
+  height: 140px;
+}
+.contact-input:focus {
+  outline: none;
+}
+
+/* Footer */
+.footer-section {
+  padding: 75px 0;
+  background: #000;
+  color: #fff;
+}
+.footer-section .small-header {
+  margin-bottom: 20px;
+}
+.footer-section .top-link {
+  cursor: pointer;
+}
+
+/* Redes sociales */
+.social-buttons-container {
+  min-height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.social-button {
+  display: inline-block;
+  position: relative;
+  transform: scale(0.75);
+  height: 75px;
+  width: 75px;
+  background-size: cover !important;
+  transition: 0.3s ease;
+  margin: 14px 2px;
+  cursor: pointer;
+}
+.social-button:hover {
+  transform: scale(1);
+  transition: 0.3s cubic-bezier(0.3, 0.2, 0, 2.5);
+}
+.social-button.facebook-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/facebook-square-social-media-256.png") no-repeat center;
+}
+.social-button.instagram-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/instagram-square-social-media-256.png") no-repeat center;
+}
+
+#catalogo h2 {
+  text-align: center;
+}
+
+/* Icono del carrito */
+.carrito-icono {
+  position:fixed;
+  top:-10px;
+  right: -110px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.carrito-icono span {
+  background-color: red;
+  color: white;
+  font-size: 0.5em;
+  padding: 0.3em 0.6em;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+  margin-top: 50px;
+}
+
+section {
+  margin: 0;
+  padding: 1em;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+/* Productos */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+  padding: 2em 1em;
+  margin-top: 4em;
+}
+
+#lentesDeSol, #armazones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+#lentesDeSol h2, #armazones h2 {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 12px;
+}
+
+.producto {
+  background-color: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.producto button {
+  font-family: "Montserrat";
+  padding: 0.5em;
+  background-color: black;
+  color: white; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  align-self: center;
+}
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto button {
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.producto button:hover {
+  background-color: #333333;
+}
+
+/* Popup del carrito */
+.popup-carrito {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.popup-carrito.visible {
+  right: 0; 
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.producto-en-carrito {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.producto-en-carrito img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.producto-en-carrito .cantidad {
+  display: flex;
+  align-items: center;
+}
+
+.producto-en-carrito .cantidad button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.producto-en-carrito .cantidad input {
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+}
+
+/* Lista del carrito */
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+#listaCarrito li {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background-color: #fcf8f8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaCarrito button {
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#listaCarrito button:hover {
+  background-color: rgb(184, 184, 184);
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff; 
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+/* Botones del popup */
+#comprar {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+#comprar:hover {
+  background-color: #333333;
+}
+
+
+#vaciarCarrito{
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+#cerrarCarrito {
+  padding: 0.3em 0.6em;
+  margin-top: 0.1em;
+  background-color: #bb2308;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#cerrarCarrito:hover{
+  background-color: #720202; 
+}
+
+/* Botón de cierre del popup */
+.cerrar-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.swal2-title {
+  font-size: 18px; 
+}
+
+.swal2-content {
+  font-size: 14px; 
+}
+
+/* Media Querys */
+@media screen and (max-width: 1300px) {
+  .test-left .half-big-text {
+    letter-spacing: 2px;
+    padding: 15px 35px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav-logo {
+    left: 4%;
+  }
+  .nav-links-container {
+    right: 4%;
+  }
+  .nav-link {
+    padding: 0 6px;
+  }
+
+}
+@media screen and (max-width: 900px) {
+  .nav-bar.scrolled .nav-links-container {
+    top: 30px;
+  }
+  .nav-logo {
+    left: 50px;
+  }
+  .nav-links-container {
+    width: 140px;
+    text-align: center;
+    top: 40px;
+    transform: none;
+    right: 50px;
+  }
+  .nav-links-container:hover .nav-link {
+    transition: 0.4s ease;
+    height: 100%;
+    opacity: 1;
+  }
+  .nav-link {
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition: 0s ease;
+  }
+  .nav-link.active {
+    height: 100%;
+    opacity: 1;
+  }
+  .contact-half {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .productos-container {
+    flex-direction: column; 
+  }
+  .producto {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  #lentesDeSol, #armazones {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

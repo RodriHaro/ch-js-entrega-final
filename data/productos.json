@@ -1,0 +1,18 @@
+[
+    { "id": 1, "nombre": "Anteojos de Sol Polarizados", "precio": 190000, "tipo": "Sol", "imagen": "assets/img/sol-polarizado.png", "categoria": "Lentes de Sol"},
+    { "id": 2, "nombre": "Armazon Premium Gris", "precio": 140000, "tipo": "Armazon", "imagen": "assets/img/armazon-gris.png", "categoria": "Armazones"},
+    { "id": 3, "nombre": "Anteojos de Sol Lente Gris", "precio": 195000, "tipo": "Sol", "imagen": "assets/img/sol-lente-gris.png", "categoria": "Lentes de Sol"},
+    { "id": 4, "nombre": "Armazon Negro Mate", "precio": 160000, "tipo": "Armazon", "imagen": "assets/img/armazon-negro-mate.png", "categoria": "Armazones"},
+    { "id": 5, "nombre": "Anteojos de Sol Lente Azul", "precio": 196000, "tipo": "Sol", "imagen": "assets/img/sol-lente-azul.png", "categoria": "Lentes de Sol"},
+    { "id": 6, "nombre": "Armazon Negro Brillo", "precio": 170000, "tipo": "Armazon", "imagen": "assets/img/armazon-negro-rojo.png", "categoria": "Armazones"},
+    { "id": 7, "nombre": "Anteojos de Sol Dorado", "precio": 198000, "tipo": "Sol", "imagen": "assets/img/sol-dorado.png", "categoria": "Lentes de Sol"},
+    { "id": 8, "nombre": "Armazon Vancouver", "precio": 185000, "tipo": "Armazon", "imagen": "assets/img/armazon-vancouver.png", "categoria": "Armazones"},
+    { "id": 9, "nombre": "Anteojos de Sol Tulum", "precio": 190000, "tipo": "Sol", "imagen": "assets/img/sol-tulum.png", "categoria": "Lentes de Sol"},
+    { "id": 10, "nombre": "Armazon Ed", "precio": 90000, "tipo": "Armazon", "imagen": "assets/img/armazon-ed.png", "categoria": "Armazones"},
+    { "id": 11, "nombre": "Anteojos de Sol Santorini", "precio": 196000, "tipo": "Sol", "imagen": "assets/img/sol-santorini.png", "categoria": "Lentes de Sol"},
+    { "id": 12, "nombre": "Armazon Maverick", "precio": 126000, "tipo": "Armazon", "imagen": "assets/img/armazon-maverick.png", "categoria": "Armazones"},
+    { "id": 13, "nombre": "Anteojos de Sol Monaco", "precio": 190000, "tipo": "Sol", "imagen": "assets/img/sol-monaco.png", "categoria": "Lentes de Sol"},
+    { "id": 14, "nombre": "Armazon Baker", "precio": 90000, "tipo": "Armazon", "imagen": "assets/img/armazon-baker.png", "categoria": "Armazones"},
+    { "id": 15, "nombre": "Anteojos de Sol Jacobs", "precio": 190000, "tipo": "Sol", "imagen": "assets/img/sol-jacobs.png", "categoria": "Lentes de Sol"},
+    { "id": 16, "nombre": "Armazon Recife", "precio": 1346000, "tipo": "Armazon", "imagen": "assets/img/armazon-recife.png", "categoria": "Armazones"}
+]

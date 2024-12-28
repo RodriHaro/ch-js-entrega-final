@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica RH | Lentes a tu medida</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <div class="nav-bar">
+        <div class="nav-logo">Óptica RH</div>
+        <div class="nav-links-container">
+            <!-- Nav bar -->
+            <a class="nav-link active" href="#topSection" id="topLink">Inicio</a>
+            <a class="nav-link" href="#lentesDeSol" id="lentesDeSolLink">Lentes de Sol</a>
+            <a class="nav-link" href="#armazones" id="armazonesLink">Armazones</a>
+            <a class="nav-link" href="#contacto" id="contactoLink">Contacto</a>
+            <!-- Icono del carrito de compras -->
+            <div id="abrirCarrito" class="carrito-icono nav-link" aria-label="Carrito de compras">
+                <i class="fas fa-shopping-cart"></i> <span id="contadorCarrito">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Sección principal -->
+</div>
+     <div class="rela-block top-section grad-back" id="topSection">
+
+</div>
+<!-- Sección del catálogo -->
+    <section id="catalogo">
+        <div id="lentesDeSol" class="productos-container">
+            <h2 class="half-big-text has-border">Lentes de Sol</h2> 
+        </div>
+        <div id="armazones" class="productos-container">
+            <h2 class="half-big-text has-border">Armazones</h2> 
+        </div>
+    </section>
+    <!-- Popup del carrito de compras -->
+    <section id="popupCarrito" class="popup-carrito oculto" aria-hidden="true">
+        <div class="popup-header">
+            <button id="cerrarCarrito" class="cerrar-popup" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <h2>Tu Carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p id="total">Total: $0</p>
+        <button id="vaciarCarrito">Vaciar Carrito</button>
+        <button id="comprar" class="comprar-grande">Comprar</button>
+    </section>
+    <!-- Sección de contacto -->
+    <div class="rela-block contact-section" id="contacto">
+        <h2 class="half-big-text has-border">Contacto</h2> 
+        <div class="rela-block contact-form-container">
+            <div class="contact-half">
+            <!-- Formulario de contacto -->    
+            <form id="formularioContacto">  
+                <input type="text" placeholder="Nombre" class="contact-input" />
+                <input type="email" placeholder="Correo Electronico" class="contact-input" />
+                <input type="tel" placeholder="Teléfono" class="contact-input" />
+                <textarea cols="40" rows="5" placeholder="Escribe tu mensaje" class="contact-input big-input"></textarea>
+                <button type="submit" class="small-header submit-button">Enviar</button>
+            </form>    
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="rela-block footer-section">
+        <div class="rela-block social-buttons-container">
+            <div class="rela-block social-buttons-container">
+                <!-- Redes sociales -->
+                <a href="https://www.facebook.com/rodriharo" target="_blank" class="social-button facebook-button"></a>
+                <a href="https://www.instagram.com/rodriharo" target="_blank" class="social-button instagram-button"></a>
+            </div>
+        </div>
+        <p>Curso Javascript Flex - Entrega Final - Rodrigo Haro</p>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/formulario.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
